@@ -26,7 +26,7 @@ FROM ubuntu:18.04 AS stylesheet
 
 RUN apt-get update && apt-get install -y curl
 RUN curl -L https://github.com/gravitystorm/openstreetmap-carto/archive/v4.23.0.tar.gz | tar -zxf - && \
-    mv openstreetmap-carto-4.23.0 openstreetmap-cart
+    mv openstreetmap-carto-4.23.0 openstreetmap-carto
 
 
 
