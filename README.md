@@ -16,7 +16,7 @@ docker run -it --rm -v /path/to/map/data.osm.pbf:/data.osm.pbf freshleafmedia/os
 
 There are a couple of environment variables used to configure where the Postgis DB is and how to authenticate
 
-- `DB_HOSTNAME` (default is `localhost`)
+- `DB_HOST` (default is `localhost`)
 - `DB_PORT` (default is 5432)
 - `DB_USER` (default is `renderer`)
 - `DB_PASSWORD`
