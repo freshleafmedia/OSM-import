@@ -1,8 +1,6 @@
 FROM ubuntu:18.04 AS build-osm2pgsql
 
-RUN apt-get update && apt-get install -y git build-essential cmake autoconf osmosis libxml2-dev libexpat1-dev bzip2
-RUN apt-get update && apt-get install -y libbz2-dev liblua5.3-dev
-RUN apt-get update && apt-get install -y libboost-filesystem-dev libboost-system-dev
+RUN apt-get update && apt-get install -y git build-essential cmake autoconf osmosis libxml2-dev libexpat1-dev bzip2 libbz2-dev liblua5.3-dev libboost-filesystem-dev libboost-system-dev
 
 RUN apt-get update \
   && apt-get install wget gnupg2 lsb-core -y \
